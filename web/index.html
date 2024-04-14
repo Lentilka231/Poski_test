@@ -2,6 +2,7 @@
 <html lang="">
 <head>
     <meta charset="utf-8">
+    <meta name="description" content="Strávený čas: 13hod.; Základní část: 6:30; Bonus: 1. 3:00; 2. 2:30; 3.1:00">
     <title>Testovací úloha - Radim Jakeš</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./dist/style.css">
@@ -11,100 +12,109 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-<section class="sidebar">
+<div class="sidebar">
     <div class="sidebar__links--sticky">
-        <a href=""><img src="./../_src/facebook-f-brands.svg"></a>
-        <a href=""><img src="./../_src/twitter-brands.svg"></a>
-        <a href=""><img src="./../_src/instagram-brands.svg"></a>
-        <a href=""><img src="./../_src/share-alt-solid.svg"></a>
+        <a href=""><img alt="facebook_logo" src="./../_src/facebook-f-brands.svg"></a>
+        <a href=""><img alt="twitter_logo" src="./../_src/twitter-brands.svg"></a>
+        <a href=""><img alt="instagram_logo" src="./../_src/instagram-brands.svg"></a>
+        <a href=""><img alt="share_icon" src="./../_src/share-alt-solid.svg"></a>
     </div>
-</section>
+</div>
+<nav class="menu">
+    <img class="menu__img" alt="logo" src="./../_src/logo.svg">
+    <a href=""><div class="menu__option option1"><p>Option1</p></div></a>
+    <a href=""><div class="menu__option option2"><p>Option2</p></div></a>
+    <a href=""><div class="menu__option option3"><p>Option3</p></div></a>
+    <a href=""><div class="menu__option option4"><p>Option4</p></div></a>
+    <a href=""><div class="menu__option option5"><p>Option5</p></div></a>
+    <img class="menu__cross" onclick="hide_menu_bar()" alt="cross" src="./svg/close.svg">
+</nav>
 <div class="grid">
     <header class="header">
-        <img class="header__img--menu" alt="menu" src="./svg/menu.svg">
+        <img class="header__img--menu" onclick="show_menu_bar(event)" alt="menu" src="./svg/menu.svg">
         <img class="header__img--logo" alt="logo" src="./../_src/logo.svg">
         <img class="header__img--search" alt="search" src="./svg/search.svg">
     </header>
-    <section class="grid__section poster1">
-        <div class="grid__section--backgroundimage">
-            <div class="grid__section--gradient">
+    <div class="grid__poster poster1">
+        <div class="grid__poster--backgroundimage">
+            <div class="grid__poster--gradient">
             </div>
         </div>
-        <a href="">
-        <div class="grid__section--content grid__section--bigger">
-                <div class="grid__section--innerDiv ">
-                    <div class="grid__section--tag tag--TRAVEL">
+        <a>
+        <div class="grid__poster--content grid__poster--bigger">
+                <div class="grid__poster--innerDiv ">
+                    <div class="grid__poster--tag tag--TRAVEL">
                         TRAVEL
                     </div>
-                    <article class="grid__section--article">
-                        <h4 class="grid__section--title">Etiam quis quam. Nemo enim ipsam voluptatem quia</h4>
-                        <p class="grid__section--date">May 25, 2048 / 9 min.</p>
+                    <article class="grid__poster--article">
+                        <h4 class="grid__poster--title">Etiam quis quam. Nemo enim ipsam voluptatem quia</h4>
+                        <p class="grid__poster--date">May 25, 2048 / 9 min.</p>
                     </article>
                 </div>
             </div>
         </a>
-    </section>
-    <section class="grid__banner">
-        <img class="grid__img" src="./../_src/space-station-moon-alt-duotone.svg">
+    </div>
+    <div class="grid__banner">
+        <img class="grid__img" alt="space-station-moon" src="./../_src/space-station-moon-alt-duotone.svg">
         <h3 class="grid__banner--title">Discover content<br> from different universe</h3>
-    </section>
-    <section class="grid__section poster2">
-        <div class="grid__section--backgroundimage">
-            <div class="grid__section--gradient">
+    </div>
+    <div class="grid__poster poster2">
+        <div class="grid__poster--backgroundimage">
+            <div class="grid__poster--gradient">
             </div>
         </div>
-        <a href="">
-        <div class="grid__section--content grid__section--smaller">
-                <div class="grid__section--innerDiv ">
-                    <div class="grid__section--tag tag--TRAVEL">
+        <a>
+        <div class="grid__poster--content grid__poster--smaller">
+                <div class="grid__poster--innerDiv ">
+                    <div class="grid__poster--tag tag--TRAVEL">
                         TRAVEL
                     </div>
-                    <article class="grid__section--article">
-                        <h4 class="grid__section--title">Etiam quis quam. Nemo enim ipsam voluptatem quia</h4>
-                        <p class="grid__section--date">January 10. 2048 / 4 min.</p>
+                    <article class="grid__poster--article">
+                        <h4 class="grid__poster--title">Etiam quis quam. Nemo enim ipsam voluptatem quia</h4>
+                        <p class="grid__poster--date">January 10. 2048 / 4 min.</p>
                     </article>
                 </div>
             </div>
         </a>
-    </section>
-    <section class="grid__section poster3">
-        <div class="grid__section--backgroundimage">
-            <div class="grid__section--gradient">
+    </div>
+    <div class="grid__poster poster3">
+        <div class="grid__poster--backgroundimage">
+            <div class="grid__poster--gradient">
             </div>
         </div>
-        <a href="">
-        <div class="grid__section--content grid__section--smaller">
-                <div class="grid__section--innerDiv ">
-                    <div class="grid__section--tag tag--TECH">
+        <a >
+        <div class="grid__poster--content grid__poster--smaller">
+                <div class="grid__poster--innerDiv ">
+                    <div class="grid__poster--tag tag--TECH">
                         TECH
                     </div>
-                    <article class="grid__section--article">
-                        <h4 class="grid__section--title">Etiam quis quam. Nemo enim ipsam voluptatem quia</h4>
-                        <p class="grid__section--date">August 20, 2047 / 8 min.</p>
+                    <article class="grid__poster--article">
+                        <h4 class="grid__poster--title">Etiam quis quam. Nemo enim ipsam voluptatem quia</h4>
+                        <p class="grid__poster--date">August 20, 2047 / 8 min.</p>
                     </article>
                 </div>
             </div>
         </a>
-    </section>
-    <section class="grid__section poster4">
-        <div class="grid__section--backgroundimage">
-            <div class="grid__section--gradient">
+    </div>
+    <div class="grid__poster poster4">
+        <div class="grid__poster--backgroundimage">
+            <div class="grid__poster--gradient">
             </div>
         </div>
-        <a href="">
-            <div class="grid__section--content grid__section--bigger">
-                <div class="grid__section--innerDiv ">
-                    <div class="grid__section--tag tag--TRAVEL">
+        <a >
+            <div class="grid__poster--content grid__poster--bigger">
+                <div class="grid__poster--innerDiv ">
+                    <div class="grid__poster--tag tag--TRAVEL">
                         TRAVEL
                     </div>
-                    <article class="grid__section--article">
-                        <h4 class="grid__section--title">Etiam quis quam. Nemo enim ipsam voluptatem quia</h4>
-                        <p class="grid__section--date">October 20, 2047 / 5 min.</p>
+                    <article class="grid__poster--article">
+                        <h4 class="grid__poster--title">Etiam quis quam. Nemo enim ipsam voluptatem quia</h4>
+                        <p class="grid__poster--date">October 20, 2047 / 5 min.</p>
                     </article>
                 </div>
             </div>
         </a>
-    </section>
+    </div>
 </div>
 
 <footer class="footer">
@@ -113,5 +123,83 @@
         <img class="footer__content--logo" alt="logo" src="./../_src/logo.svg">
     </div>
 </footer>
+<script>
+
+    //Things belonging to side-menu
+    let menu_bar = document.getElementsByClassName("menu")[0];
+    let menu_cross = menu_bar.getElementsByClassName("menu__cross")[0];
+    function show_menu_bar(e){
+        menu_bar.style.transform="translate(0%,0%)";
+        menu_cross.style.visibility="visible";
+        e.stopPropagation();
+    }
+    function hide_menu_bar(){
+        menu_bar.style.transform="translate(-100%,0%)";
+        menu_cross.style.visibility="hidden";
+    }
+    document.onkeydown = (e)=>{
+        if(e.key==="Escape"){
+            hide_menu_bar();
+        }
+    }
+    document.onclick = ()=>{
+        hide_menu_bar();
+    }
+    menu_bar.onclick =(e)=>{
+        e.stopPropagation();
+    }
+
+
+
+    //ukol3
+    let posters=document.getElementsByClassName("grid__poster");
+
+    //Task 2: returns average poster height  
+    function getAveragePosterHeight(){
+        let average_Poster_Height=0;
+        for(let i=0;i<posters.length;i++){
+            average_Poster_Height+=posters[i].offsetHeight;
+        }
+        average_Poster_Height/=posters.length;
+        return average_Poster_Height;
+    }
+    
+    //Task 3: returns sum of width of all the posters' titles
+    function getTitleSumWidth(){
+        let widthSum=0;
+        for(let i=0;i<posters.length;i++){
+            widthSum+=posters[i].getElementsByClassName("grid__poster--title")[0].offsetWidth;
+        }
+        return widthSum;
+    }
+    
+    //Task 4: print the name, date and duration of poster after clicking on it
+    function printPosterInfo(poster){
+        console.log(poster);
+        let title = poster.getElementsByClassName("grid__poster--title")[0];
+        let info = poster.getElementsByClassName("grid__poster--date")[0].textContent.split("/");
+        console.log("Nazev: ",title.textContent,"\nDatum: ",info[0],"\nDélka: ",info[1]);
+    }
+    for(let i=0;i<posters.length;i++){
+        posters[i].onclick=() => {printPosterInfo(posters[i])};
+    }
+    
+    //Task 5: print coordinations of sidebar icons after scroll 
+    let sidebar =document.getElementsByClassName("sidebar__links--sticky")[0];
+    let body=document.getElementsByTagName("body")[0];
+    window.onscroll = (e)=>{
+        let sidebar_coordinates = sidebar.getBoundingClientRect();
+        let body_coordinates = body.getBoundingClientRect();
+        console.log("-----------------------------------");
+        console.log("viewport-x:",sidebar_coordinates.left,"\nviewport-y:",sidebar_coordinates.top);
+        console.log("document-x:",sidebar_coordinates.left-body_coordinates.left,"\ndocument-y:",sidebar_coordinates.top-body_coordinates.top);
+    }
+    
+    
+    console.log("Počet příspěvků: ",posters.length);
+    console.log("Průměrná výška příspěvků:",getAveragePosterHeight(),"px");
+    console.log("Součet délek nadpisů příspěvků: ",getTitleSumWidth(),"px");
+    
+</script>
 </body>
 </html>
